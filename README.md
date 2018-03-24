@@ -1,2 +1,2 @@
 # Deckard-Cain
-Deckard Cain is a Diablo 3 Discord Bot
+Deckard Cain: a Diablo 3 Discord Bot
