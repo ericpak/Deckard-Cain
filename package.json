@@ -1,0 +1,11 @@
+{
+  "name": "Deckard-Cain",
+  "version": "0.0.1",
+  "description": "Deckard Cain: a Diablo 3 Discord bot",
+  "main": "bot.js",
+  "author": "Eric Pak",
+  "dependencies": {
+    "discord.js": "^11.3.2",
+    "winston": "^2.4.1"
+  }
+}
