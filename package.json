@@ -6,7 +6,6 @@
   "author": "Eric Pak",
   "dependencies": {
     "discord.js": "^11.3.2",
-    "snekfetch": "^3.6.4",
-    "winston": "^2.4.1"
+    "snekfetch": "^3.6.4"
   }
 }
