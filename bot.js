@@ -4,6 +4,7 @@ const fs = require("fs");
 
 const bot = new Discord.Client();
 bot.commands = new Discord.Collection();
+bot.servers = new Discord.Collection();
 
 fs.readdir("./cmds/", (err, files) => {
   if(err) console.error(err);

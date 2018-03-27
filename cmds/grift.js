@@ -100,6 +100,9 @@ module.exports.run = async (bot, message, args) => {
         case "era":
         case "nonseasonal":
           seasonal = false; break;
+        case "eu": region = "eu"; break;
+        case "kr": region = "kr"; break;
+        case "tw": region = "tw"; break;
       }
     }
   }
@@ -164,5 +167,6 @@ module.exports.run = async (bot, message, args) => {
 }
 
 module.exports.help = {
-  name: "grift"
+  name: "grift",
+  arguments: "[<rank[to <rank>]> <ladder> <hardcore|hc> <nonseasonal|era|ns>]"
 }
