@@ -6,13 +6,6 @@ module.exports.run = async (bot, message, args) => {
     message.channel.send("Whhaattttt? I can't hear you! Maybe if you were in a voice channel i could hear you!");
     return;
   }
-//   var broadcast = message.client.createVoiceBroadcast();
-//   broadcast.playFile(cainVoice);
-//   console.log(message.client.voiceConnections.values());
-//   for (const connection of message.client.voiceConnections.values()) {
-//     message.channel.send("Herro");
-//     connection.playBroadcast(broadcast);
-//   }
   var voiceChannel = message.member.voiceChannel;
   voiceChannel.join().then(connection => {
     const dispatcher = connection.playFile(cainVoice);
