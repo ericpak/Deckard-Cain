@@ -1,13 +1,13 @@
 const cainVoice = __dirname + "/../media/audio/cain.mp3";
 const hello = __dirname + "/../media/audio/hello.mp3";
-var audio = cainVoice;
 
 module.exports.run = async (bot, message, args) => {
+  var audio = cainVoice;
   if(!message.member.voiceChannel){
     message.channel.send("Whhaattttt? I can't hear you! Maybe if you were in a voice channel i could hear you!");
     return;
   }
-  if(args[1] == "hellodarkness")
+  if(args[0] == "hello" && args[1] == "darkness")
     audio = hello;
 
   var voiceChannel = message.member.voiceChannel;
