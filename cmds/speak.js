@@ -1,5 +1,5 @@
 const cainVoice = __dirname + "/../media/audio/cain.mp3";
-const hello = "/home/eric/git/Deckard-Cain/cmds/hello.mp3";
+const hello = __dirname + "/../media/audio/hello.mp3";
 var audio = cainVoice;
 
 module.exports.run = async (bot, message, args) => {
