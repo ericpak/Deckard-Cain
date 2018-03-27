@@ -63,6 +63,10 @@ module.exports.run = async (bot, message, args) => {
         case "hard":
         case "hardcore":
           hardcore = "hardcore-"; break;
+        case "sc":
+        case "soft":
+        case "softcore":
+          hardcore = ""; break;
         case "barb":
         case "barbarian":
           heroClass = "barbarian"; classIcon = "barbarian"; color = "RED"; break;
@@ -100,6 +104,10 @@ module.exports.run = async (bot, message, args) => {
         case "era":
         case "nonseasonal":
           seasonal = false; break;
+        case "season":
+        case "seasonal":
+          seasonal = true; break;
+        case "us": region = "us"; break;
         case "eu": region = "eu"; break;
         case "kr": region = "kr"; break;
         case "tw": region = "tw"; break;
