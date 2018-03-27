@@ -176,5 +176,5 @@ module.exports.run = async (bot, message, args) => {
 
 module.exports.help = {
   name: "grift",
-  arguments: "[<rank[to <rank>]> <ladder> <hardcore|hc> <nonseasonal|era|ns>]"
+  arguments: "[<rank[to <rank>]> <region> <ladder> <hardcore|hc> <nonseasonal|era|ns>]"
 }
