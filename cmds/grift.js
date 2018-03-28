@@ -29,6 +29,7 @@ module.exports.run = async (bot, message, args) => {
   var details = true;
   var color = "RED";
   var range = false;
+  var dm = config.dm;
   // api Defaults
   var region = apiConfig.region;
   var type = apiConfig.type;
@@ -59,6 +60,10 @@ module.exports.run = async (bot, message, args) => {
         range = true;
       }
       switch(String(argument)){
+        case "dm":
+          dm = true; break;
+        case "public":
+          dm = false; break;
         case "hc":
         case "hard":
         case "hardcore":
@@ -168,7 +173,10 @@ module.exports.run = async (bot, message, args) => {
       embed.addField("Rank: "+rank, profile+" \tHeroID: ["+heroId+"]("+heroURL+")"+"\tTier: "+tier+"\tTime: "+minutes+"m "+seconds+"s");
     }
 
-    message.channel.send({embed: embed});
+    if(dm)
+      message.author.send({embed: embed});
+    else
+      message.channel.send({embed: embed});
   });
 
   msg.delete();

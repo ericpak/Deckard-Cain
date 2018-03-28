@@ -1,10 +1,11 @@
-const cainVoice = __dirname + "/../media/audio/cain.mp3";
+// const cainVoice = __dirname + "/../media/audio/cain.mp3";
 const anya = __dirname + "/../media/audio/anya.mp3";
 const stay = __dirname + "/../media/audio/stay.mp3";
+const stay2 = __dirname + "/../media/audio/stay2.mp3";
 const hello = __dirname + "/../media/audio/hello.mp3";
 
 module.exports.run = async (bot, message, args) => {
-  var audio = cainVoice;
+  var audio = stay;
   var chooser = Math.random();
   if(!message.member.voiceChannel){
     message.channel.send("Whhaattttt? I can't hear you! Maybe if you were in a voice channel i could hear you!");
@@ -15,7 +16,7 @@ module.exports.run = async (bot, message, args) => {
   else if(chooser > 0.9)
     audio = anya;
   else if(chooser > 0.5)
-    audio = stay;
+    audio = stay2;
 
   var voiceChannel = message.member.voiceChannel;
   voiceChannel.join().then(connection => {

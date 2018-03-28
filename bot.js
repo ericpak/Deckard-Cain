@@ -25,6 +25,7 @@ fs.readdir("./cmds/", (err, files) => {
 });
 
 bot.on("ready", () => {
+  bot.user.setPresence({ status: 'online', game: { name: config.prefix+'help'} });
   console.log(`${bot.user.username} Bot is ready!`);
 });
 
