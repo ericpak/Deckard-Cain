@@ -50,6 +50,10 @@ module.exports.run = async (bot, message, args) => {
           return message.channel.send("Rank must be between 1 and 1000!");
       } else if(end === undefined && range){
         end = Number(argument);
+        if(end > start + 25){
+          end = start+25;
+          message.channel.send("Range must be 25 or less. New range set to "+(start+1)+" to "+end);
+        }
         if(end < start || end > 1000)
           end = start+1;
         details = false;
@@ -133,7 +137,8 @@ module.exports.run = async (bot, message, args) => {
       season = currentEra;
   }
 
-  let api = "https://"+region+".api.battle.net/"+type+"/d3/"+seasonal+"/"+season+"/leaderboard/rift-"+hardcore+heroClass+"?namespace=2-6-US&access_token="+config.blizzToken;
+  let api = "https://"+region+".api.battle.net/"+type+"/d3/"+seasonal+"/"+season+"/leaderboard/rift-"+hardcore+heroClass+"?access_token="+config.blizzToken;
+  //api = "https://eu.api.battle.net/data/d3/season/13/leaderboard/rift-barbarian?access_token=ed2tae93j5hpyf9eceudhrqc";
   switch(heroClass){
     case "barbarian": title = "Barbarian"; break;
     case "monk": title = "Monk"; break;
@@ -184,5 +189,5 @@ module.exports.run = async (bot, message, args) => {
 
 module.exports.help = {
   name: "grift",
-  arguments: "[<rank[to <rank>]> <region> <ladder> <hardcore|hc> <nonseasonal|era|ns>]"
+  arguments: "[<rank[to <rank>]> <dm/public> <region> <ladder> <hardcore|hc> <nonseasonal|era|ns>]"
 }
