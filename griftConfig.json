@@ -1,0 +1,11 @@
+{
+  "region": "us",
+  "type": "data",
+  "currentSeason": 13,
+  "era": 10,
+  "heroClass": "barbarian",
+  "classIcon": "barbarian",
+  "hardcore": "",
+  "seasonal": true,
+  "dm": false
+}

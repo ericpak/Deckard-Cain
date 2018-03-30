@@ -1,4 +1,3 @@
-// const cainVoice = __dirname + "/../media/audio/cain.mp3";
 const anya = __dirname + "/../media/audio/anya.mp3";
 const stay = __dirname + "/../media/audio/stay.mp3";
 const stay2 = __dirname + "/../media/audio/stay2.mp3";
