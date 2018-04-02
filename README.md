@@ -44,4 +44,5 @@ All arguments are optional and don't have to be written in any specific order un
 ---------------------------------------------------------------------------------
 ##### Contact
 
-If you want to contact the developer, give feedback, submit a bug, or suggest a feature feel free to join the 
+If you want to contact the developer, give feedback, submit a bug, or suggest a feature feel free to add AKghost
+#2187 on Discord. 
