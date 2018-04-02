@@ -3,3 +3,6 @@ config.json
 
 # npm node modules folder
 node_modules/
+
+# database
+data/
