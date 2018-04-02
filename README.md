@@ -17,8 +17,7 @@ Commands | Description | Usage
 
 Argument | Description | Possible Arguments
 --------- | ------------- | -----------------------
-something | somethings | sosasfasdfasf
-rank to rank | Type in a number to view details on that greater rift or a number to number to view a range of results. | # \[to #] (50) (50 to 60)
+\[rank \[to rank]] | Type in a number to view details on that greater rift or a number to number to view a range of results. | # \[to #] (50) (50 to 60)
 \[dm\|public] | Receive the information either as a Direct Message or in the channel you sent it. | dm public
 \[region] | Choose the region you wish to view. | us eu kr tw
 \[ladder] | Choose the ladder you wish to view. | barb barbarian cru sader crusader dh demonhunter monk wd witchdoctor wiz wizard nec necro necromancer t2 team2 t3 team3 t4 team4
