@@ -1,5 +1,6 @@
 # Deckard Cain: a Diablo 3 Discord Bot
 [Add Deckard Cain](https://discordapp.com/oauth2/authorize?client_id=426943692121702400&permissions=8&scope=bot)
+
 ------------------------------------------------------------------------------
 #### Commands
 
@@ -15,7 +16,7 @@ Commands | Description | Usage
 #### Arguments
 
 Argument | Description | Possible Arguments
----------|-------------|-----------------------
+--------- | ------------- | -----------------------
 \[rank\[to \<rank>]] | Type in a number to view details on that greater rift or a number to number to view a range of results. | # \[to #] (50) (50 to 60)
 \[dm\|public] | Receive the information either as a Direct Message or in the channel you sent it. | dm public
 \[region] | Choose the region you wish to view. | us eu kr tw
