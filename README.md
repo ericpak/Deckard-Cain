@@ -18,6 +18,7 @@ Commands | Description | Usage
 Argument | Description | Possible Arguments
 --------- | ------------- | -----------------------
 something | somethings | sosasfasdfasf
+\[rank\[to \<rank>]] | Type in a number to view details on that greater rift or a number to number to view a range of results. | # \[to #] (50) (50 to 60)
 
 -------------------------------------------------------------------------------
 #### Additional Notes
