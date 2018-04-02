@@ -3,8 +3,6 @@ const Discord = require("discord.js");
 const config = require("../config.json");
 
 module.exports.run = async (bot, message, args) => {
-  let msg = await message.channel.send("Getting data...");
-
   // Defaults
   var start;
   var end;
@@ -26,6 +24,9 @@ module.exports.run = async (bot, message, args) => {
 
   if(args[0] === "view" && args[1] === "defaults")
     return message.channel.send(settings.prefix+"grift "+(dm ? "dm" : "public")+" "+region+" "+hardcore+heroClass+" "+(settings.start+1)+" to "+settings.end);
+
+  // Waiting message
+  let msg = await message.channel.send("Stay awhile and...");
 
   // Argument Switch statement loop
   while(args.length > 0){
@@ -178,7 +179,7 @@ module.exports.run = async (bot, message, args) => {
 
     let icon = "http://media.blizzard.com/d3/icons/portraits/64/"+classIcon+"_male.png";
     let ladderURL = "https://"+region+".diablo3.com/en/rankings/"+seasonal+"/"+season+"/rift-"+hardcore+heroClass;
-    let footer = "Season "+season+(season === (seasonal === "era" ? settings.currentEra : settings.currentSeason) ? " | Current " + seasonal : "");
+    let footer = "Season "+season+" | "+region+(season === (seasonal === "era" ? settings.currentEra : settings.currentSeason) ? " | Current " + seasonal : "");
     let embed = new Discord.RichEmbed()
       .setAuthor(title+" Greater Rift "+(seasonal==="season" ? "Seasonal" : "Era"), icon, ladderURL)
       .setFooter(footer)
