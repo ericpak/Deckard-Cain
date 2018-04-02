@@ -6,7 +6,7 @@
 
 Commands | Description | Usage
 ---------|-------------|--------
-:grift | Get information about greater rifts | :grift \[rank\[to \<rank>]] [dm\|public] \[region] \[ladder] \[soft\|hardcore] \[seasonal\|era] 
+:grift | Get information about greater rifts | :grift \[rank\[to rank]] [dm\|public] \[region] \[ladder] \[soft\|hardcore] \[seasonal\|era] 
 :help | Get basic information on the commands with no arguments or detailed information with a command for an argument | :help \[command]
 :prefix | With an Admin role you can change the prefix of the bot. | :prefix \[current prefix] to \[new prefix]
 :settings | With a D3Mod role you can change the default settings of the :grift command. | :settings \[rank\[to \<rank>]] [dm\|public] \[region] \[ladder] \[soft\|hardcore] \[seasonal\|era] 
